@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+       <div class="nav">
+        <div class="title">
+            <h1>Festi<span style="color: #fc0d0d;">Gifts</span></h1>
+        </div>
+
+        <nav>
+    		<ul>
+        		<li><a href="index.html" class="items_links2">INICIO</a></li>
+        		<li><a href="nosotros.html" class="items_links1">NOSOTROS</a></li>
+    		</ul>
+	</nav>
+       </div>
+       
+       
+    </header>
+    <main class="content nosotros">
+        <div class="content-text nosotros-m">
+            <div class="content-first nosotros-fersr">
+                <article>
+                    <div class="article1">
+                        <h2><span style="color: #fc0d0d;">Amor</span> y <span style="color: #ccff00;">amistad</span></h2>
+                    </div>
+                    <div class="text-parrafo">
+                        El amor y la amistad son celebraciones maravillosas para demostrar aprecio a las personas especiales en nuestras vidas. Para regalos de amor y amistad, podrías considerar regalar algo significativo y personalizado, como una foto enmarcada de un momento especial juntos, una caja de chocolates o dulces favoritos, una carta escrita a mano expresando tus sentimientos, una experiencia juntos como una cena o una actividad divertida, o incluso un regalo hecho a mano que muestre cuánto los valoras.
+                    </div>
+                    <div class="parrafo-second">
+                      <p>
+                        El amor y la amistad son celebraciones maravillosas para demostrar aprecio a las personas especiales en nuestras vidas. Para regalos de amor y amistad, considera opciones personalizadas que reflejen la conexión única que compartes. Desde una foto enmarcada de un momento memorable juntos hasta una caja de chocolates o dulces favoritos que sabes que les encantan, pasando por una carta escrita a mano llena de palabras sinceras que expresen tus sentimientos más profundos. Además, podrías optar por compartir una experiencia significativa, como una cena romántica o una actividad divertida que disfruten juntos, o incluso un regalo artesanal que demuestre cuánto valoras su amistad o amor. Estas ideas no solo celebran los lazos especiales que compartes, sino que también crean momentos memorables que perdurarán en el tiempo.
+                      </p>
+                    </div>
+                    <div class="image">
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloAmorAmistad1.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloAmorAmistad2.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloAmorAmistad3.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="left-parrafo nosotros-parrafo">
+                <article>
+                    <h2>¿Qué hacemos?</h2>
+                    <p>Nos especializamos en ofrecer una selección cuidadosamente curada de regalos que celebran el amor y la amistad. Desde opciones personalizadas como fotos enmarcadas y cartas emotivas, hasta experiencias compartidas como cenas románticas o actividades divertidas, cada detalle está pensado para fortalecer y celebrar los lazos especiales que compartes con quienes más quieres.</p>
+                </article>
+		<div class="image">
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloAmorAmistad4.jpg" alt="">
+		    </div>
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloAmorAmistad5.jpg" alt="">
+		    </div>
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloAmorAmistad6.jpg" alt="">
+		    </div>
+		</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Carlos Steven Coronel Ramírez, Santiago Estevez Torres, Grado: 10-4, Colegio técnico Vicente Azuero, Copyright &copy; 2024</p>
+    </footer>
+
+    
+    <script>
+        function openFullscreen(element) {
+            var imgSrc = element.querySelector('img').src;
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.className = 'fullscreen-image';
+            fullscreenDiv.innerHTML = '<img src="' + imgSrc + '" onclick="closeFullscreen()" />';
+            document.body.appendChild(fullscreenDiv);
+        }
+
+        function closeFullscreen() {
+            var fullscreenDiv = document.querySelector('.fullscreen-image');
+            if (fullscreenDiv) {
+                fullscreenDiv.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>

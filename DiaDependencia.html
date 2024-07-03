@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+       <div class="nav">
+        <div class="title">
+            <h1>Festi<span style="color: #fc0d0d;">Gifts</span></h1>
+        </div>
+
+        <nav>
+    		<ul>
+        		<li><a href="index.html" class="items_links2">INICIO</a></li>
+        		<li><a href="nosotros.html" class="items_links1">NOSOTROS</a></li>
+    		</ul>
+	</nav>
+       </div>
+       
+       
+    </header>
+    <main class="content nosotros">
+        <div class="content-text nosotros-m">
+            <div class="content-first nosotros-fersr">
+                <article>
+                    <div class="article1">
+                        <h2>Día de la Independencia</h2>
+                    </div>
+                    <div class="text-parrafo">
+                        El Día de la Independencia es una celebración importante en muchos países, incluyendo Colombia. Para regalos relacionados con el Día de la Independencia, podrías considerar opciones que reflejen el orgullo patriótico y la historia de la nación. Algunas ideas podrían ser libros sobre la historia de la independencia colombiana, artículos con los colores de la bandera nacional, como camisetas, tazas o banderas, joyería con motivos patrióticos, como collares o pulseras con diseños alusivos a Colombia, obras de arte o artesanías que representen la cultura colombiana, o incluso una experiencia gastronómica con platos típicos del país.
+                    </div>
+                    <div class="parrafo-second">
+                      <p>
+                        El Día de la Independencia es una festividad emblemática en muchos países, especialmente en Colombia, donde se conmemora con orgullo la lucha por la libertad y la soberanía nacional. Para celebrar este importante evento con regalos significativos, considera opciones que resalten el espíritu patriótico y la historia de la nación. Entre las ideas más apreciadas se encuentran libros que narran de manera detallada los acontecimientos históricos que llevaron a la independencia de Colombia, así como artículos con los colores vibrantes de la bandera nacional, como camisetas, tazas o banderas para adornar el hogar con orgullo patrio. También podrías optar por joyería con motivos colombianos, como collares o pulseras que exhiban diseños alusivos a la cultura local. Las obras de arte y artesanías que representan la diversidad cultural del país, junto con experiencias gastronómicas que ofrecen los sabores auténticos de la cocina colombiana, son excelentes opciones para compartir el amor por la historia y la identidad nacional en esta fecha tan especial.
+                      </p>
+                    </div>
+                    <div class="image">
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloIndenpendencia.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="left-parrafo nosotros-parrafo">
+                <article>
+                    <h2>¿Qué hacemos?</h2>
+                    <p>En nuestra sección dedicada al Día de la Independencia, ofrecemos una amplia selección de opciones que celebran el orgullo patriótico y la historia nacional. Encuentra desde libros históricos que narran los eventos clave de nuestra independencia, hasta artículos con los colores vibrantes de nuestra bandera nacional, como camisetas, tazas y banderas. Además, joyería con diseños patrióticos, obras de arte y artesanías que capturan la esencia de nuestra cultura, y experiencias gastronómicas con los sabores tradicionales que nos identifican como país. Celebra con nosotros esta fecha tan especial con regalos que honran nuestra identidad y nuestro legado histórico.</p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Carlos Steven Coronel Ramírez, Santiago Estevez Torres, Grado: 10-4, Colegio técnico Vicente Azuero, Copyright &copy; 2024</p>
+    </footer>
+
+    
+    <script>
+        function openFullscreen(element) {
+            var imgSrc = element.querySelector('img').src;
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.className = 'fullscreen-image';
+            fullscreenDiv.innerHTML = '<img src="' + imgSrc + '" onclick="closeFullscreen()" />';
+            document.body.appendChild(fullscreenDiv);
+        }
+
+        function closeFullscreen() {
+            var fullscreenDiv = document.querySelector('.fullscreen-image');
+            if (fullscreenDiv) {
+                fullscreenDiv.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>

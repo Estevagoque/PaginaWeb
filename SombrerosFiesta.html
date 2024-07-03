@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+       <div class="nav">
+        <div class="title">
+            <h1>Festi<span style="color: #fc0d0d;">Gifts</span></h1>
+        </div>
+
+        <nav>
+    		<ul>
+        		<li><a href="index.html" class="items_links2">INICIO</a></li>
+        		<li><a href="nosotros.html" class="items_links1">NOSOTROS</a></li>
+    		</ul>
+	</nav>
+       </div>
+       
+       
+    </header>
+    <main class="content nosotros">
+        <div class="content-text nosotros-m">
+            <div class="content-first nosotros-fersr">
+                <article>
+                    <div class="article1">
+                        <h2>Sombreros de Fiesta</h2>
+                    </div>
+                    <div class="text-parrafo">
+                        Los sombreros para fiestas pueden servir para varios propósitos:
+                    </div>
+                    <div class="parrafo-second">
+                      <p>
+                        - Como parte de un disfraz: muchas fiestas tienen temas específicos y los sombreros pueden ser usados para completar un disfraz o crear un personaje.<br>
+- Para protección: en fiestas al aire libre, los sombreros pueden proteger de la lluvia, el sol o el viento.
+- Por estilo: los sombreros pueden ser usados simplemente porque son estilosos o elegantes y pueden dar un toque especial a un atuendo.<br>
+- Para diversión: en algunas fiestas, como fiestas de piscina o playa, los sombreros pueden ser usados simplemente para divertirse y pasar un buen rato.<br></p>
+                    </div>
+                    <div class="image">
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero1.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero2.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero3.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="left-parrafo nosotros-parrafo">
+                <article>
+                    <h2>¿Qué hacemos?</h2>
+                    <p>Explora nuestra colección de sombreros y accesorios para fiestas, diseñados para agregar diversión y estilo a cualquier celebración. Desde sombreros festivos y coloridos que complementan cualquier atuendo hasta accesorios temáticos que hacen que cada ocasión sea memorable. Encuentra opciones para todas las edades y tipos de eventos, desde cumpleaños hasta celebraciones especiales. Celebra con nosotros y haz de cada fiesta una experiencia única y llena de alegría con nuestros divertidos productos.</p>
+                </article>
+		<div class="image">
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero4.jpg" alt="">
+                        </div>
+		</div>
+		<div class="image">
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero5.jpg" alt="">
+                        </div>
+		</div>
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegalosSombrero6.jpg" alt="">
+                        </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>Desarrollado por Carlos Steven Coronel Ramírez, Santiago Estevez Torres, Grado: 10-4, Colegio técnico Vicente Azuero, Copyright &copy; 2024</p>
+    </footer>
+
+    
+    <script>
+        function openFullscreen(element) {
+            var imgSrc = element.querySelector('img').src;
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.className = 'fullscreen-image';
+            fullscreenDiv.innerHTML = '<img src="' + imgSrc + '" onclick="closeFullscreen()" />';
+            document.body.appendChild(fullscreenDiv);
+        }
+
+        function closeFullscreen() {
+            var fullscreenDiv = document.querySelector('.fullscreen-image');
+            if (fullscreenDiv) {
+                fullscreenDiv.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>

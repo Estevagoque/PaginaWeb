@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+       <div class="nav">
+        <div class="title">
+            <h1>Festi<span style="color: #fc0d0d;">Gifts</span></h1>
+        </div>
+
+        <nav>
+    		<ul>
+        		<li><a href="index.html" class="items_links2">INICIO</a></li>
+        		<li><a href="nosotros.html" class="items_links1">NOSOTROS</a></li>
+    		</ul>
+	</nav>
+       </div>
+       
+       
+    </header>
+    <main class="content nosotros">
+        <div class="content-text nosotros-m">
+            <div class="content-first nosotros-fersr">
+                <article>
+                    <div class="article1">
+                        <h2>El día de la <span style="color: #fc0d0d;">madre</span></h2>
+                    </div>
+                    <div class="text-parrafo">
+                        El Día de la Madre es una ocasión especial para demostrarle a nuestras mamás cuánto las queremos y apreciamos. Algunas ideas de regalos podrían ser flores hermosas, una tarjeta hecha a mano con un mensaje sincero, un día de spa para que se relaje, joyería personalizada o incluso un libro de su autor favorito.
+                    </div>
+                    <div class="parrafo-second">
+                      <p>
+                        Es un momento para expresar gratitud por su amor incondicional y dedicación, ofreciendo gestos que celebran su papel fundamental en nuestras vidas y les permiten disfrutar de momentos de cuidado y alegría.
+                      </p>
+                    </div>
+                    <div class="image">
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloDiaMadre1.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloDiaMadre2.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/RegaloDiaMadre5.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="left-parrafo nosotros-parrafo">
+                <article>
+                    <h2>¿Qué hacemos?</h2>
+                    <p>Nos especializamos en ofrecer una cuidadosa selección de regalos pensados para celebrar el Día de la Madre con amor y originalidad. Desde flores exquisitas hasta tarjetas personalizadas y experiencias de spa relajantes, cada detalle está diseñado para expresar gratitud y cariño hacia mamá de una manera única y memorable.</p>
+                </article>
+		<div class="image">
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloDiaMadre3.jpg" alt="">
+		    </div>
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloDiaMadre4.jpg" alt="">
+		    </div>
+		    <div class="imagen-contenedor" onclick="openFullscreen(this)">
+		        <img src="image/RegaloDiaMadre6.jpg" alt="">
+		    </div>
+		</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Carlos Steven Coronel Ramírez, Santiago Estevez Torres, Grado: 10-4, Colegio técnico Vicente Azuero, Copyright &copy; 2024</p>
+    </footer>
+
+    
+    <script>
+        function openFullscreen(element) {
+            var imgSrc = element.querySelector('img').src;
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.className = 'fullscreen-image';
+            fullscreenDiv.innerHTML = '<img src="' + imgSrc + '" onclick="closeFullscreen()" />';
+            document.body.appendChild(fullscreenDiv);
+        }
+
+        function closeFullscreen() {
+            var fullscreenDiv = document.querySelector('.fullscreen-image');
+            if (fullscreenDiv) {
+                fullscreenDiv.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>

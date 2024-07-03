@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="container">
+       <div class="nav">
+        <div class="title">
+            <h1>Festi<span style="color: #fc0d0d;">Gifts</span></h1>
+        </div>
+
+        <nav>
+    		<ul>
+        		<li><a href="index.html" class="items_links2">INICIO</a></li>
+        		<li><a href="nosotros.html" class="items_links1">NOSOTROS</a></li>
+    		</ul>
+	</nav>
+       </div>
+       
+       
+    </header>
+    <main class="content nosotros">
+        <div class="content-text nosotros-m">
+            <div class="content-first nosotros-fersr">
+                <article>
+                    <div class="article1">
+                        <h2>Vasos personalizados</h2>
+                    </div>
+                    <div class="text-parrafo">
+                        Los vasos personalizados pueden servir para varios propósitos:
+                    </div>
+                    <div class="parrafo-second">
+                      <p>- Promoción: muchas empresas y organizaciones usan vasos personalizados con su logo o marca para promover su negocio o evento.<br>
+- Regalos personalizados: los vasos personalizados pueden ser un regalo único y especial para alguien, ya sea para una ocasión especial o simplemente para demostrar afecto.<br>
+- Identificación: en eventos grandes, como fiestas o reuniones, los vasos personalizados pueden ser usados para identificar a los invitados y evitar confusiones.<br>
+- Estilo: algunas personas simplemente disfrutan de tener vasos personalizados con diseños o mensajes que reflejan su estilo personal o gustos.<br></p>
+                    </div>
+                    <div class="image">
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados1.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados2.jpg" alt="">
+                        </div>
+                        <div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados3.jpg" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="left-parrafo nosotros-parrafo">
+                <article>
+                    <h2>¿Qué hacemos?</h2>
+                    <p>Descubre nuestra variedad de vasos personalizados, diseñados para hacer cada ocasión especial aún más memorable. Desde vasos grabados con nombres y fechas importantes hasta diseños únicos que reflejan tu estilo personal, nuestros vasos son el regalo perfecto para cualquier celebración. Ya sea para bodas, cumpleaños, o simplemente para añadir un toque personal a tu colección, nuestros vasos personalizados son la elección ideal. Explora nuestras opciones y encuentra el vaso perfecto que combine funcionalidad con un toque personalizado</p>
+                </article>
+		<div class="image">
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados4.jpg" alt="">
+                        </div>
+		</div>
+		<div class="image">
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados5.jpg" alt="">
+                        </div>
+		</div>
+		<div class="imagen-contenedor" onclick="openFullscreen(this)">
+                            <img src="image/VasosPersonalizados6.jpg" alt="">
+                        </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+        <p>Desarrollado por Carlos Steven Coronel Ramírez, Santiago Estevez Torres, Grado: 10-4, Colegio técnico Vicente Azuero, Copyright &copy; 2024</p>
+    </footer>
+
+    
+    <script>
+        function openFullscreen(element) {
+            var imgSrc = element.querySelector('img').src;
+            var fullscreenDiv = document.createElement('div');
+            fullscreenDiv.className = 'fullscreen-image';
+            fullscreenDiv.innerHTML = '<img src="' + imgSrc + '" onclick="closeFullscreen()" />';
+            document.body.appendChild(fullscreenDiv);
+        }
+
+        function closeFullscreen() {
+            var fullscreenDiv = document.querySelector('.fullscreen-image');
+            if (fullscreenDiv) {
+                fullscreenDiv.remove();
+            }
+        }
+    </script>
+
+</body>
+</html>
